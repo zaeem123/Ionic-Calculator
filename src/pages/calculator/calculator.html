@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="dark" style="height: 40px;">
+      <ion-title >
+          CALCULATOR
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+  <div style="align-items: center;padding: 10mm;">
+    <ion-item>
+      <ion-label color="dark" Fix >Enter number</ion-label>
+      <ion-input type="text" readonly id="value" name="display" [(ngModel)]="result"></ion-input>
+  </ion-item>
+  <br>
+      <button ion-button color="danger"  large (click)="btnClicked('C')"> C </button>
+      <button  ion-button  large outline (click)="btnClicked('%')"> % </button>
+      <button  ion-button  large outline (click)="btnClicked('/')"> / </button>
+      <button  ion-button large  color="secondary" (click)="back('<-')" > <-- </button>
+  
+        <br>
+  
+      <button   ion-button large outline (click)="btnClicked('7')" > 7 </button>
+      <button  ion-button large outline (click)="btnClicked('8')" > 8 </button>
+      <button  ion-button large outline (click)="btnClicked('9')" > 9 </button>
+      <button  ion-button large  outline (click)="btnClicked('*')" > X </button>
+  
+        <br>
+  
+      <button  ion-button large outline (click)="btnClicked('4')" > 4 </button>
+      <button  ion-button large outline (click)="btnClicked('5')" > 5 </button>
+      <button  ion-button large outline (click)="btnClicked('6')" > 6 </button>
+      <button  ion-button large  outline (click)="btnClicked('-')" > - </button>
+  
+        <br>
+  
+      <button  ion-button large outline (click)="btnClicked('1')" > 1 </button>
+      <button  ion-button large outline (click)="btnClicked('2')" > 2 </button>
+      <button  ion-button large outline (click)="btnClicked('3')" > 3 </button>
+      <button  ion-button large  outline (click)="btnClicked('+')" > + </button>
+  
+        <br>
+  
+      <button  ion-button large outline (click)="btnClicked('.')" >  . </button>
+      <button  ion-button large outline (click)="btnClicked('0')" > 0 </button>
+      <button  ion-button large color="dark" (click)="equalsTo('=')" > = </button>
+      
+      <button  ion-button large block (click)="history('hisTory')"> History </button>
+  </div>
+</ion-content>

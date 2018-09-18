@@ -5,12 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { CalculatorPage } from '../pages/calculator/calculator';
+import { Vibration } from '@ionic-native/vibration';
+//import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    CalculatorPage
   ],
   imports: [
     BrowserModule,
@@ -19,11 +21,14 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    CalculatorPage,
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Vibration,
+   // ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
