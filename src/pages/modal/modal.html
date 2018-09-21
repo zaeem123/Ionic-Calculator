@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-list>
+      <ion-item *ngFor="let his of historyy">
+        <h2>{{his}}<br></h2> 
+      </ion-item>
+    </ion-list>
+    <button ion-button small color="danger" (click)="onClose()">Back to Calculator</button>
+  </div>
+
+</ion-content>

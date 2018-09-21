@@ -14,6 +14,7 @@
       <ion-input type="text" readonly id="value" name="display" [(ngModel)]="result"></ion-input>
   </ion-item>
   <br>
+  <!-- <br>
       <button ion-button color="danger"  large (click)="btnClicked('C')"> C </button>
       <button  ion-button  large outline (click)="btnClicked('%')"> % </button>
       <button  ion-button  large outline (click)="btnClicked('/')"> / </button>
@@ -46,6 +47,90 @@
       <button  ion-button large outline (click)="btnClicked('0')" > 0 </button>
       <button  ion-button large color="dark" (click)="equalsTo('=')" > = </button>
       
-      <button  ion-button large block (click)="history('hisTory')"> History </button>
-  </div>
+      <button  ion-button large block (click)="modalCreate('history')"> History </button> -->
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <button ion-button color="danger" full medium (click)="btnClicked('C')"> C </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button color="secondary" full medium (click)="btnClicked('%')"> % </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button color="secondary" full medium (click)="btnClicked('/')"> / </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium color="secondary" full (click)="back('<-')" > <-- </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <button   ion-button medium full (click)="btnClicked('7')" > 7 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('8')" > 8 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('9')" > 9 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full color="secondary" (click)="btnClicked('*')" > X </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('4')" > 4 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('5')" > 5 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('6')" > 6 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full color="secondary" (click)="btnClicked('-')" > - </button>
+  
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <button  ion-button medium  full (click)="btnClicked('1')" > 1 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium  full (click)="btnClicked('2')" > 2 </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium  full (click)="btnClicked('3')" >3</button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full color="secondary" (click)="btnClicked('+')" > + </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('.')" >  . </button>
+      </ion-col>
+      <ion-col >
+        <button  ion-button medium full (click)="btnClicked('0')" > 0 </button>
+      </ion-col>
+      <ion-col col-7>
+        <button  ion-button medium full color="dark" (click)="equalsTo('=')" > = </button>
+      </ion-col>
+    
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button  ion-button color="zaeem" medium full block (click)="modalCreate('history')"> History </button>
+      </ion-col>
+     
+    </ion-row>
+  </ion-grid>
+</div>
 </ion-content>
