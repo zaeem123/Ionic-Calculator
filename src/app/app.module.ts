@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { CalculatorPage } from '../pages/calculator/calculator';
 import { ModalPage } from '../pages/modal/modal';
 import { Vibration } from '@ionic-native/vibration';
+
 //import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @NgModule({
   declarations: [
     MyApp,
     CalculatorPage,
-    ModalPage
+    ModalPage,
+    
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { Vibration } from '@ionic-native/vibration';
   entryComponents: [
     MyApp,
     CalculatorPage,
-    ModalPage
+    ModalPage,
+    
     
   ],
   providers: [
